@@ -35,10 +35,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
+      - run: npm ci --prefix .quartz
 
       - name: Build Quartz
-        run: npx quartz build
+        run: cd .quartz && npx quartz build --directory ../ --output ../public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

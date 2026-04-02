@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "sarthakvk.github.io/secondbrain-public",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", ".quartz", ".github"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
